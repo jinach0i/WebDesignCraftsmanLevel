@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 주요기능 정리</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{background: url('https://picsum.photos/2000/2000?random=1') no-repeat center center;}
+        a{display: block; text-align: center; text-decoration: none; color: black;}
+        #wrap{width: 100%; height: 100%; margin: 0 auto;}
+        a.btn{width: 100px; height: 100px; line-height: 40px; z-index: 1; position: absolute; right: 0; }
+        a.btn i{font-size: 100px; color: gold; transition: .4s;}
+        ul{display: none; width: 100%; height: 100%; background-color: deepskyblue; position: fixed; top: 0; bottom: 0; left: 0; right: 0; padding-top: 25%; }
+        ul>li{}
+        ul>li>a{height: 40px; line-height: 40px; transition: .4s;}
+        ul>li>a:hover{font-weight: bold; background-color: lightcyan; text-decoration: double 2px aliceblue;}
+        .menu-on{display: block; }
+    </style>
+    <script defer>
+        window.onload=function () {
+            const btn = document.querySelector('.btn');
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('ul').classList.toggle('menu-on');
+            
+            document.querySelector('i').classList.toggle('fa-times-circle');
+
+        });
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <a href="javascript:" class="btn" >
+            <i class="fas fa-hamburger"></i>
+        </a>
+        <ul>
+            <li><a href="./subs/menu.html">메뉴 정리</a></li>
+            <li><a href="./subs/menu.html">메뉴 정리</a></li>
+            <li><a href="./subs/menu.html">메뉴 정리</a></li>
+            <li><a href="./subs/menu.html">메뉴 정리</a></li>
+        </ul>
+    </div>
+</body>
+</html>
