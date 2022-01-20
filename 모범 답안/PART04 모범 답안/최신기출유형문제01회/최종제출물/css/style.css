@@ -72,19 +72,20 @@ header{
 	background-color:#999999;
 	color: #ffff00;
 }
-.imgslide{
+/* SLIDEs: */
+div.imgslide{
 	float:right;
 	height:350px;
 	width:800px;
 	position:relative;
 }
-.imgslide>a{
+div.imgslide>a{
 	display:block; 
 	position:absolute; 
 	left:0; 
 	top:0;
 }
-.imgtext{
+span.imgtext{
 	height:50px;
     width:300px;
     position:absolute;
